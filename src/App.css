@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;* {
+    box-sizing: border-box;
+  }
+  
+  .navbar{
+  
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+  
+    width:100vw;
+    height: 48px;
+    position: relative;
+  
+  }
+  
+  .tools{
+  
+    /* align-self: center; */
+    margin-left: 37%;
+    margin-right: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+  }
+  
+  .saveDiv{
+  
+    align-self: center;
+    margin-left: 34%;
+    margin-right: 0;
+  
+  }
+  
+  .tools button{
+  
+    width: 4vw;
+    height: 100%;
+    font-size: 1.3rem;
+    padding-left: 2%;
+  
+  }
+  
+  .rectangle-btn:hover, .triangle-btn:hover, .circle-btn:hover, .hand-btn:hover,
+  .colorPalette-btn:hover, .quad-bezier-btn:hover, .cubic-bezier-btn:hover{
+  
+    background-color: rgb(226, 226, 226);
+  
+  }
+  
+  .save-btn {
+    background-color: #0d99ff;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    outline: none;
+    margin-left: 11px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-clip: border-box;
+    width: 65px;
+    height: 32px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: box-shadow 0.3s ;
+  }
+  
+  .save-btn:hover{
+  
+    background-color: #007dd6;
+    /* box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); */
+  
+  }
+  
+  @media only screen and (max-width: 768px) {
+  
+    .navbar {
+      width: 100%;
+    }
+  
+  }
+  .mt{
+    margin-top: 40px;
+  }
+  
+  
